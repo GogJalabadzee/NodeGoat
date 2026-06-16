@@ -145,4 +145,4 @@ jobs:
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
     steps:
       - name: Deploy step
-        run: echo "✅ ყველა უსაფრთხოების კარიბჭე გავიდა — deployment იწყება"
+        run: echo " ყველა უსაფრთხოების კარიბჭე გავიდა — deployment იწყება"
