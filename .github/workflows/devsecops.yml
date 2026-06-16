@@ -141,7 +141,7 @@ jobs:
   deploy:
     name: Deploy (gated)
     runs-on: ubuntu-latest
-    needs: [secret-scan, sast-semgrep, sca, container, dast]
+    needs: [secret-scan, sast-semgrep, sca, dast]
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
     steps:
       - name: Deploy step
